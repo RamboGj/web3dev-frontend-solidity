@@ -1,0 +1,74 @@
+:root {
+    --dark-gray: #191919;
+    --gray: #393939 ;
+    --purple-500: #B84EDD; 
+    --purple-300: #B84EFF; 
+    --purple-100: #E2B4F2; 
+}
+
+.wrapper {
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    background: var(--dark-gray);
+}
+
+.profile {
+    width: 760px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    margin: auto;
+    padding: 5rem 2.5rem;
+    text-align: center;
+}
+
+.profile > h1 {
+    font-weight: bold;
+    color: var(--purple-500);
+}
+
+.profile > p {
+    margin-top: 0.5rem;
+    color: var(--purple-100);
+}
+
+.sendWaveSection {
+    width: 768px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    margin: auto;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.sendWaveSection > button {
+    padding: 1.25rem 1rem;
+    border: 0;
+    border-radius: 8px;
+    background-color: var(--purple-500);
+
+    cursor: pointer;
+}
+
+.sendWaveSection > button:hover {
+    transition: 500ms;
+    opacity: 0.7;
+}
+
+.waveList li {
+    list-style: none;
+
+    gap: 0.5rem;
+    margin-top: 1.5rem;
+    padding: 1rem 0.5rem;
+    border-radius: 8px;
+
+    background: var(--gray);
+    color: var(--purple-100);
+}
